@@ -1,0 +1,17 @@
+{
+  "name": "projeto05_javascript",
+  "version": "1.0.0",
+  "description": "Lista de recomendacao de animes - CRUD com JavaScript",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./output.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

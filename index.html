@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animes Recomendados</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-slate-900 text-slate-100 p-6">
+    <h1 class="text-3xl font-bold text-center text-purple-400 mb-2">Animes Recomendados</h1>
+    <p class="text-center text-slate-400 mb-6">
+      Adicione um anime, uma cena que você gostou e diga por que recomenda!
+    </p>
+
+    <form id="formulario" class="bg-slate-800 p-4 rounded shadow max-w-xl mx-auto mb-8">
+      <h2 id="titulo-formulario" class="text-xl font-bold mb-4">Adicionar anime</h2>
+
+      <label class="block mb-1">Nome do anime</label>
+      <input id="nome" type="text" required class="bg-slate-700 border border-slate-600 w-full p-2 mb-3 rounded" />
+
+      <label class="block mb-1">Link da imagem da cena (Pinterest ou outro site)</label>
+      <input id="imagem" type="text" placeholder="https://i.pinimg.com/..." class="bg-slate-700 border border-slate-600 w-full p-2 mb-1 rounded" />
+      <p class="text-sm text-slate-400 mb-3">
+        No Pinterest: abra o pin, clique com o botão direito na imagem e escolha
+        "Copiar endereço da imagem".
+      </p>
+
+      <label class="block mb-1">Por que escolheu essa cena?</label>
+      <textarea id="motivoCena" required class="bg-slate-700 border border-slate-600 w-full p-2 mb-3 rounded"></textarea>
+
+      <label class="block mb-1">Review geral do anime</label>
+      <textarea id="review" required class="bg-slate-700 border border-slate-600 w-full p-2 mb-3 rounded"></textarea>
+
+      <label class="block mb-1">Por que recomenda?</label>
+      <textarea id="recomendacao" required class="bg-slate-700 border border-slate-600 w-full p-2 mb-3 rounded"></textarea>
+
+      <label class="block mb-1">Seu nome</label>
+      <input id="autor" type="text" required class="bg-slate-700 border border-slate-600 w-full p-2 mb-4 rounded" />
+
+      <button id="botao-salvar" type="submit" class="bg-purple-600 text-white px-4 py-2 rounded">
+        Adicionar
+      </button>
+      <button id="botao-cancelar" type="button" class="bg-slate-600 text-white px-4 py-2 rounded hidden">
+        Cancelar edição
+      </button>
+    </form>
+
+    <table class="bg-slate-800 w-full shadow">
+      <thead class="bg-purple-800 text-white">
+        <tr>
+          <th class="p-2">Anime</th>
+          <th class="p-2">Cena favorita</th>
+          <th class="p-2">Por que essa cena</th>
+          <th class="p-2">Review</th>
+          <th class="p-2">Por que recomendo</th>
+          <th class="p-2">Indicado por</th>
+          <th class="p-2">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="lista-animes">
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

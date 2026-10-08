@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+@source "./exemplo-animes.html";
+@source "./exemplo-animes.js";
